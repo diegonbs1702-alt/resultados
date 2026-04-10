@@ -3,695 +3,488 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CERVA Inversiones | Wyndham Garden Mérida</title>
+    <title>Reporte Semanal Meta Ads</title>
     
-    <!-- Speed Optimization: Preload Hero Image -->
-    <link rel="preload" as="image" href="render-wyndham.jpg">
-    
-    <link rel="stylesheet" href="estilos.css">
-
-    <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
-
-    <!-- Meta Pixel Code -->
+    <!-- Tailwind CSS para Estilos -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '391128485730112');
-    fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=391128485730112&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- End Meta Pixel Code -->
-
-    <style>
-        /* Custom Styles & Native Animations for Speed */
-        :root {
-            --primary: #114363;
-            --accent: #f59e0b;
-        }
-        
-        body {
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-
-        /* Native Scroll Behavior */
-        html {
-            scroll-behavior: smooth;
-        }
-
-        /* Intersection Observer Fade-In Classes */
-        .fade-in-section {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-            will-change: opacity, transform;
-        }
-        .fade-in-section.is-visible {
-            opacity: 1;
-            transform: none;
-        }
-
-        /* Custom Range Slider Styling */
-        input[type=range] {
-            -webkit-appearance: none;
-            width: 100%;
-            background: transparent;
-        }
-        input[type=range]::-webkit-slider-thumb {
-            -webkit-appearance: none;
-            height: 24px;
-            width: 24px;
-            border-radius: 50%;
-            background: var(--accent);
-            cursor: pointer;
-            margin-top: -8px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-        }
-        input[type=range]::-webkit-slider-runnable-track {
-            width: 100%;
-            height: 8px;
-            cursor: pointer;
-            background: #e5e7eb;
-            border-radius: 4px;
-        }
-    </style>
-</head>
-<body class="font-sans text-gray-800 bg-[#114363] min-h-screen selection:bg-[#f59e0b] selection:text-[#114363]">
-
-    <!-- 1. HERO SECTION (Above the Fold) -->
-    <section id="hero-section" class="relative bg-[#114363] text-white overflow-hidden">
-        <div class="absolute inset-0 opacity-25 bg-[url('render-wyndham.jpg')] bg-cover bg-center mix-blend-overlay" fetchpriority="high"></div>
-        <div class="absolute inset-0 bg-[#114363]/85"></div> <!-- Fondo solido sin degradado -->
-        
-        <!-- Logos Superior (Ajustados para móvil y escritorio) -->
-        <div class="absolute top-0 left-0 w-full z-20">
-            <div class="max-w-7xl mx-auto flex justify-between items-center pt-4 px-4 sm:px-6 lg:px-8">
-                <!-- Proporciones mantenidas pero tamaños reducidos globalmente -->
-                <img src="logo-wyndham.png" alt="Wyndham Garden Logo" class="h-16 sm:h-28 object-contain opacity-90 hover:opacity-100 transition-opacity" />
-                <img src="logo-cerva.png" alt="CERVA Inversiones Logo" class="h-5 sm:h-9 object-contain opacity-90 hover:opacity-100 transition-opacity" />
-            </div>
-        </div>
-        
-        <!-- Padding superior reducido dramáticamente (pt-20 sm:pt-28) para acercar el contenido a los logos -->
-        <div class="relative max-w-7xl mx-auto px-4 pt-20 sm:pt-28 lg:pt-32 pb-20 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-                
-                <!-- Text Column (left) -->
-                <div class="lg:col-span-7 flex flex-col items-center lg:items-start text-center lg:text-left">
-                    <div class="fade-in-section mb-6">
-                        <span class="inline-flex items-center px-4 py-1.5 rounded-full text-sm font-semibold bg-white/10 text-[#f59e0b] uppercase tracking-wider border border-[#f59e0b]/30">
-                            <i data-lucide="map-pin" class="w-4 h-4 mr-2 fill-current"></i> 
-                            A Pasos del Único Consulado Americano al sur de México
-                        </span>
-                    </div>
-                    
-                    <h1 class="fade-in-section text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
-                        Invierta en el Hotel con Mayor
-                        <span class="text-[#f59e0b]">Demanda Proyectada de Mérida</span>
-                    </h1>
-                    
-                    <p class="fade-in-section mt-4 text-lg sm:text-xl max-w-2xl text-gray-300 font-light mb-10">
-                        Obtenga rentas mensuales de por vida con el respaldo de la marca global Wyndham. Inicie con solo el <strong class="text-white">15% de enganche</strong> y <strong class="text-white">48 meses sin intereses</strong>.
-                    </p>
-                    
-                    <div class="fade-in-section flex flex-col sm:flex-row gap-4 w-full justify-center lg:justify-start">
-                        <a href="#calculator-section" class="flex items-center justify-center px-8 py-4 text-lg font-bold rounded-lg text-[#114363] bg-[#f59e0b] hover:bg-yellow-400 transition-all shadow-lg hover:shadow-yellow-500/30 transform hover:-translate-y-1">
-                            Calcula tus rendimientos
-                            <i data-lucide="trending-up" class="ml-2 w-5 h-5"></i>
-                        </a>
-                    </div>
-
-                    <div class="fade-in-section mt-8 flex flex-wrap items-center justify-center lg:justify-start gap-6 text-sm text-gray-400">
-                        <div class="flex items-center"><i data-lucide="shield-check" class="w-5 h-5 mr-2 text-[#f59e0b]"></i> Protegido por Fideicomiso</div>
-                        <div class="flex items-center"><i data-lucide="badge-check" class="w-5 h-5 mr-2 text-[#f59e0b]"></i> Inversión en Preventa</div>
-                        <div class="flex items-center"><i data-lucide="circle-dollar-sign" class="w-5 h-5 mr-2 text-[#f59e0b]"></i> Desde $240,000 MXN</div>
-                    </div>
-                </div>
-
-                <!-- Form Column (right) -->
-                <div class="lg:col-span-5 relative z-10 w-full max-w-md mx-auto mt-8 lg:mt-0">
-                    <form id="lead-form" class="fade-in-section bg-white p-6 sm:p-8 rounded-3xl shadow-2xl text-left">
-                        <div class="text-center mb-6">
-                            <h3 class="text-2xl font-black text-[#114363]">¡Cotice su inversión!</h3>
-                            <p class="text-sm text-gray-500 mt-1">Déjenos sus datos para recibir asesoría</p>
-                        </div>
-                        
-                        <!-- CAMPO OCULTO EVENT ID PARA META ADS CAPI DEDUPLICATION -->
-                        <input type="hidden" name="eventId" id="event-id" value="">
-                        
-                        <div class="mb-4">
-                            <label class="block text-sm font-bold text-gray-700 mb-2">Nombre Completo</label>
-                            <input type="text" name="nombre" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#114363] focus:border-transparent outline-none text-gray-800" placeholder="Ej. Carlos Mendoza" />
-                        </div>
-                        <div class="mb-4">
-                            <label class="block text-sm font-bold text-gray-700 mb-2">Teléfono (WhatsApp)</label>
-                            <div class="flex w-full rounded-lg border border-gray-300 focus-within:ring-2 focus-within:ring-[#114363] focus-within:border-transparent bg-white overflow-hidden">
-                                <span class="inline-flex items-center px-4 border-r border-gray-300 bg-gray-50 text-gray-600 font-bold">+52</span>
-                                <input type="tel" name="telefono_raw" required class="w-full px-4 py-3 outline-none text-gray-800" placeholder="123 456 7890" pattern="[0-9 ]+" />
-                            </div>
-                        </div>
-                        <div class="mb-4">
-                            <label class="block text-sm font-bold text-gray-700 mb-2">Correo Electrónico</label>
-                            <input type="email" name="email" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#114363] focus:border-transparent outline-none text-gray-800" placeholder="carlos@correo.com" />
-                        </div>
-                        <div class="mb-6">
-                            <label class="block text-sm font-bold text-gray-700 mb-2">¿Cuál es tu presupuesto de inversión?</label>
-                            <select name="presupuesto" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#114363] focus:border-transparent outline-none bg-white text-gray-800">
-                                <option value="">Seleccione una opción</option>
-                                <option value="240000">1 acción ($240,000 MXN)</option>
-                                <option value="480000">2 acciones ($480,000 MXN)</option>
-                                <option value="960000">3 a 5 acc. ($720k - $1.2 M)</option>
-                                <option value="1500000">Más de 5 (+$1.2M)</option>
-                                <option value="0">Aún evaluando</option>
-                            </select>
-                        </div>
-                        <button type="submit" class="w-full bg-[#f59e0b] hover:bg-yellow-400 text-[#114363] font-black text-xl py-4 rounded-xl shadow-lg transition-colors flex items-center justify-center">
-                            Contactar a un Asesor <i data-lucide="arrow-right" class="ml-2 w-6 h-6"></i>
-                        </button>
-                        <p class="text-xs text-center text-gray-500 mt-4">
-                            Sus datos serán integrados de manera segura a nuestro CRM. Cero fricción, cero llamadas de spam.
-                        </p>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 2. THE LOCATION ADVANTAGE (Fondo blanco) -->
-    <section class="py-20 bg-white">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-                <div class="fade-in-section relative rounded-2xl overflow-hidden shadow-2xl group">
-                    <img src="render-wyndham.jpg" loading="lazy" alt="Ubicación Mérida" class="w-full h-[500px] object-cover transition-transform duration-700 group-hover:scale-105" />
-                    <div class="absolute inset-0 bg-gradient-to-t from-[#114363]/90 to-transparent flex flex-col justify-end p-8">
-                        <div class="flex items-center text-[#f59e0b] mb-2">
-                            <i data-lucide="map-pin" class="w-6 h-6 mr-2"></i>
-                            <span class="font-bold text-lg">Mérida, Yucatán</span>
-                        </div>
-                        <h3 class="text-2xl font-bold text-white">Zona Norte Premium</h3>
-                    </div>
-                </div>
-
-                <div class="fade-in-section">
-                    <h2 class="text-3xl sm:text-4xl font-bold text-[#114363] mb-6">
-                        Ubicación Estratégica: Su Garantía de <span class="text-[#f59e0b]">Ocupación Constante</span>
-                    </h2>
-                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
-                        El proyecto Wyndham Garden Consulado está situado en la zona de mayor plusvalía y flujo corporativo de la ciudad. Una ubicación diseñada milimétricamente para capturar el mercado de turismo de negocios y visados.
-                    </p>
-                    
-                    <ul class="space-y-6">
-                        <li class="flex items-start">
-                            <div class="flex-shrink-0 flex items-center justify-center w-12 h-12 rounded-full bg-[#114363]/5 text-[#114363]">
-                                <i data-lucide="building" class="w-6 h-6"></i>
-                            </div>
-                            <div class="ml-4">
-                                <h4 class="text-xl font-bold text-gray-900">Frente al Nuevo Consulado de EE.UU.</h4>
-                                <p class="mt-1 text-gray-500">Flujo diario garantizado de miles de personas gestionando trámites, requiriendo hospedaje ejecutivo inmediato.</p>
-                            </div>
-                        </li>
-                        <li class="flex items-start">
-                            <div class="flex-shrink-0 flex items-center justify-center w-12 h-12 rounded-full bg-[#114363]/5 text-[#114363]">
-                                <i data-lucide="briefcase" class="w-6 h-6"></i>
-                            </div>
-                            <div class="ml-4">
-                                <h4 class="text-xl font-bold text-gray-900">En la Nueva Zona Corporativa de Mérida</h4>
-                                <p class="mt-1 text-gray-500">A pasos del centro corporativo y comercial más exclusivo del sureste mexicano.</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 3. INTERACTIVE YIELD CALCULATOR -->
-    <section id="calculator-section" class="py-24 bg-[#114363] text-white relative overflow-hidden">
-        <div class="absolute top-0 right-0 -translate-y-1/4 translate-x-1/4 w-[800px] h-[800px] rounded-full bg-white/5 blur-3xl pointer-events-none"></div>
-
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="fade-in-section text-center mb-12">
-                <h2 class="text-3xl sm:text-4xl font-bold mb-4">Proyecte su Patrimonio</h2>
-                <p class="text-xl text-gray-300">Calcule sus ingresos pasivos estimados a través de nuestro modelo de Pool de Rentas.</p>
-            </div>
-
-            <div class="fade-in-section bg-white rounded-3xl p-8 shadow-2xl text-gray-800">
-                <div class="text-center mb-8">
-                    <p class="text-sm font-bold text-gray-500 uppercase tracking-wide">Valor Total de Inversión</p>
-                    <div class="text-4xl font-black text-[#114363]">
-                        $<span id="total-investment-display">240,000</span> <span class="text-lg text-gray-500 font-normal">MXN</span>
-                    </div>
-                    <p class="text-sm text-gray-500 mt-1">($240,000 MXN por acción)</p>
-                </div>
-
-                <div class="mb-8">
-                    <label class="block text-sm font-bold text-gray-500 uppercase tracking-wide mb-4">
-                        Número de Acciones a Adquirir: <span id="shares-count-display" class="text-[#114363] text-2xl font-black ml-2">1</span>
-                    </label>
-                    <input 
-                        type="range" 
-                        id="shares-slider"
-                        min="1" 
-                        max="12" 
-                        value="1" 
-                    />
-                    <div class="flex justify-between text-xs font-bold text-gray-400 mt-2">
-                        <span>1 Acción</span>
-                        <span>12 Acciones (Límite)</span>
-                    </div>
-                </div>
-
-                <div class="mb-8">
-                    <label class="block text-sm font-bold text-gray-500 uppercase tracking-wide mb-4 text-center">
-                        Escenario de Ocupación
-                    </label>
-                    <div class="flex flex-col sm:flex-row justify-center gap-4" id="scenario-buttons">
-                        <button class="scenario-btn px-6 py-3 rounded-xl font-bold border-2 transition-colors bg-transparent text-gray-500 border-gray-200 hover:border-[#114363]" data-scenario="0.11">
-                            Conservador (11%)
-                        </button>
-                        <button class="scenario-btn px-6 py-3 rounded-xl font-bold border-2 transition-colors bg-[#f59e0b] text-[#114363] border-[#f59e0b]" data-scenario="0.14">
-                            Medio (14%)
-                        </button>
-                        <button class="scenario-btn px-6 py-3 rounded-xl font-bold border-2 transition-colors bg-transparent text-gray-500 border-gray-200 hover:border-green-600" data-scenario="0.16">
-                            Alto (16%)
-                        </button>
-                    </div>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-                    <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-                        <div class="flex items-center text-gray-500 mb-2">
-                            <i data-lucide="trending-up" class="w-5 h-5 mr-2"></i>
-                            <span class="font-semibold">Enganche Requerido (15%)</span>
-                        </div>
-                        <div class="text-3xl font-black text-[#114363]">
-                            $<span id="down-payment-display">36,000</span> <span class="text-sm font-normal text-gray-500">MXN</span>
-                        </div>
-                        <p class="text-sm text-[#f59e0b] font-semibold mt-2">+ 48 meses sin intereses</p>
-                    </div>
-
-                    <div class="bg-[#114363]/5 rounded-2xl p-6 border border-[#114363]/10">
-                        <div class="flex items-center text-gray-500 mb-2">
-                            <i data-lucide="check-circle" class="w-5 h-5 mr-2 text-green-600"></i>
-                            <span class="font-semibold">Rendimiento Anual Proyectado</span>
-                        </div>
-                        <div class="text-3xl font-black text-green-600">
-                            $<span id="annual-yield-display">33,600</span> <span class="text-sm font-normal text-gray-500">MXN</span>
-                        </div>
-                        <p class="text-sm text-gray-500 mt-2 font-medium">Escenario del <span id="scenario-text-display">14</span>% anual estimado</p>
-                    </div>
-                </div>
-
-                <div class="text-center pt-4 border-t border-gray-100">
-                    <a href="#hero-section" class="inline-flex items-center justify-center px-8 py-4 text-lg font-bold rounded-lg text-white bg-[#114363] hover:bg-blue-900 transition-all shadow-lg hover:shadow-blue-900/30 transform hover:-translate-y-1 w-full sm:w-auto">
-                        Deseo Invertir Ahora
-                        <i data-lucide="arrow-right" class="ml-2 w-5 h-5"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 4. THE OFFER STACK (Fondo blanco) -->
-    <section class="py-24 bg-white">
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="fade-in-section text-center mb-16">
-                <h2 class="text-3xl sm:text-4xl font-bold text-[#114363] mb-4">
-                    La Oferta <span class="text-[#f59e0b]">"Wyndham Garden"</span>
-                </h2>
-                <p class="text-xl text-gray-600">Lo que obtiene al invertir hoy con CERVA Inversiones.</p>
-            </div>
-
-            <div class="bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100">
-                <div class="p-8 sm:p-12">
-                    <ul class="space-y-6">
-                        <li class="fade-in-section flex items-center justify-between pb-6 border-b border-gray-100">
-                            <div class="flex items-center">
-                                <div class="flex-shrink-0 w-8 h-8 rounded-full bg-green-100 flex items-center justify-center mr-4">
-                                    <i data-lucide="check-circle" class="w-5 h-5 text-green-600"></i>
-                                </div>
-                                <span class="text-lg font-bold text-gray-800">Título de Propiedad Vitalicio (Acción del Hotel)</span>
-                            </div>
-                            <span class="hidden sm:inline-block px-3 py-1 bg-gray-100 text-gray-600 text-sm font-bold rounded-full">Activo Tangible</span>
-                        </li>
-                        <li class="fade-in-section flex items-center justify-between pb-6 border-b border-gray-100">
-                            <div class="flex items-center">
-                                <div class="flex-shrink-0 w-8 h-8 rounded-full bg-green-100 flex items-center justify-center mr-4">
-                                    <i data-lucide="check-circle" class="w-5 h-5 text-green-600"></i>
-                                </div>
-                                <span class="text-lg font-bold text-gray-800">Pool de Rentas Mensual (11% - 16% Anual Estimado)</span>
-                            </div>
-                            <span class="hidden sm:inline-block px-3 py-1 bg-gray-100 text-gray-600 text-sm font-bold rounded-full">Flujo de Efectivo</span>
-                        </li>
-                        <li class="fade-in-section flex items-center justify-between pb-6 border-b border-gray-100">
-                            <div class="flex items-center">
-                                <div class="flex-shrink-0 w-8 h-8 rounded-full bg-green-100 flex items-center justify-center mr-4">
-                                    <i data-lucide="check-circle" class="w-5 h-5 text-green-600"></i>
-                                </div>
-                                <span class="text-lg font-bold text-gray-800">Acceso a la App WONDER para Monitoreo 24/7</span>
-                            </div>
-                            <span class="hidden sm:inline-block px-3 py-1 bg-gray-100 text-gray-600 text-sm font-bold rounded-full">Tecnología Exclusiva</span>
-                        </li>
-                        <li class="fade-in-section flex items-center justify-between pb-6 border-b border-gray-100">
-                            <div class="flex items-center">
-                                <div class="flex-shrink-0 w-8 h-8 rounded-full bg-green-100 flex items-center justify-center mr-4">
-                                    <i data-lucide="check-circle" class="w-5 h-5 text-green-600"></i>
-                                </div>
-                                <span class="text-lg font-bold text-gray-800">Membresía de Club Vacacional Wyndham de Regalo</span>
-                            </div>
-                            <span class="hidden sm:inline-block px-3 py-1 bg-gray-100 text-gray-600 text-sm font-bold rounded-full">Bono Especial</span>
-                        </li>
-                        <li class="fade-in-section flex items-center justify-between">
-                            <div class="flex items-center">
-                                <div class="flex-shrink-0 w-8 h-8 rounded-full bg-green-100 flex items-center justify-center mr-4">
-                                    <i data-lucide="check-circle" class="w-5 h-5 text-green-600"></i>
-                                </div>
-                                <span class="text-lg font-bold text-gray-800">Inversión 100% heredable y de libre venta</span>
-                            </div>
-                            <span class="hidden sm:inline-block px-3 py-1 bg-gray-100 text-gray-600 text-sm font-bold rounded-full">Flexibilidad</span>
-                        </li>
-                    </ul>
-                    
-                    <div class="mt-12 p-8 bg-[#114363] rounded-2xl text-center">
-                        <h3 class="text-3xl sm:text-4xl font-black">
-                            <span class="text-white">Invierte en</span> <span class="text-[#f59e0b]">Fase de Fundador</span>
-                        </h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 5. TRUST & AMENITY GALLERY (Fondo Azul) -->
-    <section class="py-20 bg-[#114363] border-t border-white/10">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="fade-in-section text-center mb-16">
-                <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">
-                    Calidad <span class="text-[#f59e0b]">4 Estrellas</span> Internacional
-                </h2>
-                <p class="text-xl text-gray-300">Amenidades diseñadas para garantizar la máxima tarifa promedio diaria (ADR).</p>
-            </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- Gallery Items -->
-                <div class="fade-in-section group relative h-80 rounded-2xl overflow-hidden cursor-pointer shadow-lg border border-white/10">
-                    <img src="rooftop-bar.jpg" loading="lazy" alt="Rooftop Bar Exclusivo" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
-                    <div class="absolute inset-0 bg-gradient-to-t from-[#114363]/90 via-[#114363]/30 to-transparent flex items-end p-6">
-                        <h4 class="text-white font-bold text-xl">Rooftop Bar Exclusivo</h4>
-                    </div>
-                </div>
-                <div class="fade-in-section group relative h-80 rounded-2xl overflow-hidden cursor-pointer shadow-lg border border-white/10">
-                    <img src="business-center.jpg" loading="lazy" alt="Business Center 24/7" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
-                    <div class="absolute inset-0 bg-gradient-to-t from-[#114363]/90 via-[#114363]/30 to-transparent flex items-end p-6">
-                        <h4 class="text-white font-bold text-xl">Business Center 24/7</h4>
-                    </div>
-                </div>
-                <div class="fade-in-section group relative h-80 rounded-2xl overflow-hidden cursor-pointer shadow-lg border border-white/10">
-                    <img src="gimnasio-wyndham.jpg" loading="lazy" alt="Gimnasio Equipado" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
-                    <div class="absolute inset-0 bg-gradient-to-t from-[#114363]/90 via-[#114363]/30 to-transparent flex items-end p-6">
-                        <h4 class="text-white font-bold text-xl">Gimnasio Equipado</h4>
-                    </div>
-                </div>
-                <div class="fade-in-section group relative h-80 rounded-2xl overflow-hidden cursor-pointer shadow-lg border border-white/10">
-                    <img src="restaurante-wyndham.jpg" loading="lazy" alt="Restaurante Signature" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
-                    <div class="absolute inset-0 bg-gradient-to-t from-[#114363]/90 via-[#114363]/30 to-transparent flex items-end p-6">
-                        <h4 class="text-white font-bold text-xl">Restaurante Signature</h4>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- App WONDER Banner -->
-            <div class="fade-in-section mt-16 bg-[#0a2a40] border border-white/10 rounded-3xl p-8 sm:p-12 flex flex-col md:flex-row items-center justify-between shadow-2xl">
-                 <div class="md:w-2/3 mb-8 md:mb-0">
-                     <h3 class="text-2xl sm:text-3xl font-bold text-white mb-4 flex items-center">
-                         <i data-lucide="smartphone" class="w-8 h-8 text-[#f59e0b] mr-3"></i>
-                         App WONDER: Transparencia Absoluta
-                     </h3>
-                     <p class="text-gray-300 text-lg">
-                         Monitoree la ocupación del hotel, el estatus de sus pagos y sus rendimientos mensuales en tiempo real directamente desde su smartphone. La tecnología elimina la incertidumbre.
-                     </p>
-                 </div>
-                 <div class="md:w-1/3 flex justify-center">
-                    <div class="w-48 h-64 bg-[#114363] rounded-2xl border-4 border-gray-600 shadow-2xl flex items-center justify-center relative overflow-hidden">
-                        <div class="absolute top-0 w-1/2 h-4 bg-gray-600 rounded-b-xl"></div>
-                        <div class="text-[#f59e0b] font-bold text-2xl">WONDER</div>
-                    </div>
-                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 6. FINAL URGENT CTA -->
-    <section id="contact-section" class="py-24 bg-[#f59e0b] relative">
-        <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] mix-blend-overlay"></div>
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-            
-            <div class="fade-in-section inline-block bg-red-600 text-white font-black px-6 py-2 rounded-full uppercase tracking-widest mb-8 shadow-lg animate-pulse">
-                Cupo Estrictamente Limitado
-            </div>
-            
-            <h2 class="fade-in-section text-4xl sm:text-5xl font-black text-[#114363] mb-6">
-                Solo 12 Acciones Disponibles Por Habitación
-            </h2>
-            
-            <p class="fade-in-section text-xl text-[#114363]/80 font-medium mb-12">
-                No pierda la oportunidad de asegurar patrimonio generacional. Agende una presentación privada con un asesor especializado de CERVA Inversiones.
-            </p>
-            
-            <!-- BOTÓN PARA SUBIR AL FORMULARIO -->
-            <div class="fade-in-section text-center">
-                <a href="#hero-section" class="inline-flex items-center justify-center px-10 py-5 text-xl font-black rounded-xl text-white bg-[#114363] hover:bg-blue-900 transition-all shadow-2xl hover:shadow-blue-900/40 transform hover:-translate-y-2">
-                    Completar mi registro ahora
-                    <i data-lucide="arrow-up" class="ml-3 w-6 h-6"></i>
-                </a>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="bg-[#0a2a40] text-gray-400 py-8 text-center text-sm border-t border-white/5">
-        <p>© 2026 CERVA Inversiones. Especialistas en Activos de Alto Rendimiento.</p>
-        <p class="mt-2 text-xs opacity-60">Wyndham Garden Mérida Consulado es un proyecto de Smart Desarrollos. Imágenes con fines ilustrativos.</p>
-    </footer>
-
-    <!-- WHATSAPP POPUP MODAL -->
-    <div id="whatsapp-popup" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm">
-        <div class="bg-white rounded-3xl p-8 max-w-md w-full shadow-2xl relative text-center transform transition-all scale-95 opacity-0" id="popup-content">
-            <button type="button" id="close-popup" class="absolute top-4 right-4 text-gray-400 hover:text-gray-700 transition-colors">
-                <i data-lucide="x" class="w-6 h-6"></i>
-            </button>
-            
-            <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <i data-lucide="check-circle" class="w-8 h-8 text-green-600"></i>
-            </div>
-            
-            <h3 class="text-2xl font-black text-[#114363] mb-4">¡Sus datos han sido registrados!</h3>
-            <p class="text-gray-600 mb-8">
-                Un asesor especializado se pondrá en contacto pronto. Mientras tanto, le invitamos a unirse a nuestro <strong>grupo exclusivo de WhatsApp para inversionistas</strong>, donde compartimos más oportunidades en pool de rentas para diversificar su portafolio.
-            </p>
-            
-            <a href="https://chat.whatsapp.com/F89TisCjUq7GR69m8gpv8C" target="_blank" rel="noreferrer" id="whatsapp-link" class="w-full inline-flex items-center justify-center px-6 py-4 font-bold text-white bg-green-500 hover:bg-green-600 rounded-xl transition-colors shadow-lg shadow-green-500/30">
-                <i data-lucide="smartphone" class="w-5 h-5 mr-2"></i>
-                Unirme al Grupo Exclusivo
-            </a>
-        </div>
-    </div>
-
-    <!-- MAIN LOGIC (Vanilla JS for ultra-fast execution) -->
-    <script>
-        // Inicializar iconos
-        lucide.createIcons();
-
-        // 0. GENERAR EVENT ID PARA META ADS (CAPI Deduplication)
-        const generatedEventId = crypto.randomUUID ? crypto.randomUUID() : 'evt_' + Math.random().toString(36).substring(2, 15) + Date.now().toString(36);
-        const eventIdField = document.getElementById('event-id');
-        if (eventIdField) {
-            eventIdField.value = generatedEventId;
-        }
-        
-        // 1. Lógica de la Calculadora de Rendimientos
-        document.addEventListener('DOMContentLoaded', () => {
-            const sharePrice = 240000;
-            let currentShares = 1;
-            let currentScenario = 0.14; // Medio es 14%
-
-            const slider = document.getElementById('shares-slider');
-            const sharesDisplay = document.getElementById('shares-count-display');
-            const investmentDisplay = document.getElementById('total-investment-display');
-            const downPaymentDisplay = document.getElementById('down-payment-display');
-            const annualYieldDisplay = document.getElementById('annual-yield-display');
-            const scenarioTextDisplay = document.getElementById('scenario-text-display');
-            const scenarioButtons = document.querySelectorAll('.scenario-btn');
-
-            function updateCalculator() {
-                const totalInvestment = sharePrice * currentShares;
-                const downPayment = totalInvestment * 0.15;
-                const annualYield = totalInvestment * currentScenario;
-
-                const formatMoney = (val) => val.toLocaleString('es-MX', { maximumFractionDigits: 0 });
-
-                sharesDisplay.textContent = currentShares;
-                investmentDisplay.textContent = formatMoney(totalInvestment);
-                downPaymentDisplay.textContent = formatMoney(downPayment);
-                annualYieldDisplay.textContent = formatMoney(annualYield);
-                scenarioTextDisplay.textContent = (currentScenario * 100).toFixed(0);
-            }
-
-            slider.addEventListener('input', (e) => {
-                currentShares = parseInt(e.target.value);
-                updateCalculator();
-            });
-
-            // Volvemos los botones a los colores del tema claro
-            scenarioButtons.forEach(btn => {
-                btn.addEventListener('click', (e) => {
-                    currentScenario = parseFloat(btn.getAttribute('data-scenario'));
-                    
-                    scenarioButtons.forEach(b => {
-                        b.className = "scenario-btn px-6 py-3 rounded-xl font-bold border-2 transition-colors bg-transparent text-gray-500 border-gray-200 hover:border-[#114363]";
-                    });
-                    
-                    if(currentScenario === 0.11) {
-                        btn.className = "scenario-btn px-6 py-3 rounded-xl font-bold border-2 transition-colors bg-[#114363] text-white border-[#114363]";
-                    } else if (currentScenario === 0.14) {
-                        btn.className = "scenario-btn px-6 py-3 rounded-xl font-bold border-2 transition-colors bg-[#f59e0b] text-[#114363] border-[#f59e0b]";
-                    } else {
-                        btn.className = "scenario-btn px-6 py-3 rounded-xl font-bold border-2 transition-colors bg-green-600 text-white border-green-600";
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#114363',
+                        accent: '#bb9b54',
+                        success: '#10b981',
+                        danger: '#ef4444'
                     }
-
-                    updateCalculator();
-                });
-            });
-
-            updateCalculator();
-        });
-
-        // 2. Lógica de Intercepción del Formulario y PopUp
-        const form = document.getElementById('lead-form');
-        const popup = document.getElementById('whatsapp-popup');
-        const popupContent = document.getElementById('popup-content');
-        const closeBtn = document.getElementById('close-popup');
-        const whatsappLink = document.getElementById('whatsapp-link');
-
-        function getCookie(name) {
-            let match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
-            if (match) return match[2];
-            return null;
+                }
+            }
         }
+    </script>
 
-        function showPopup() {
-            popup.classList.remove('hidden');
-            setTimeout(() => {
-                popupContent.classList.remove('scale-95', 'opacity-0');
-                popupContent.classList.add('scale-100', 'opacity-100');
-            }, 10);
-        }
+    <!-- React & ReactDOM -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    
+    <!-- Babel para compilar JSX en el navegador -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    
+    <!-- Recharts y sus dependencias estables -->
+    <script src="https://unpkg.com/react-is/umd/react-is.production.min.js"></script>
+    <script src="https://unpkg.com/prop-types/prop-types.min.js"></script>
+    <script src="https://unpkg.com/recharts@2.1.12/umd/Recharts.js"></script>
+</head>
+<body class="bg-slate-50 print:bg-white text-slate-800 antialiased selection:bg-[#bb9b54] selection:text-white">
+    
+    <div id="root"></div>
 
-        function hidePopup() {
-            popupContent.classList.remove('scale-100', 'opacity-100');
-            popupContent.classList.add('scale-95', 'opacity-0');
-            setTimeout(() => {
-                popup.classList.add('hidden');
-            }, 300);
-        }
+    <script type="text/babel">
+        const { useState, useMemo, useRef } = React;
+        const { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip: RechartsTooltip, ResponsiveContainer, BarChart, Bar, Legend } = window.Recharts;
 
-        form.addEventListener('submit', async (e) => {
-            e.preventDefault(); 
-            
-            const formData = new FormData(form);
-            const data = Object.fromEntries(formData.entries());
-            
-            // Unimos el número telefónico
-            if (data.telefono_raw) {
-                data.telefono = "+52 " + data.telefono_raw.trim();
-                delete data.telefono_raw; 
-            }
-            
-            // --- CAPTURA DE DATOS PARA META CAPI ---
-            data.userAgent = navigator.userAgent;
-            data.pageUrl = window.location.href; // Captura automática de la URL de la página
-            
-            try {
-                const ipResponse = await fetch('https://api.ipify.org?format=json');
-                const ipData = await ipResponse.json();
-                data.clientIp = ipData.ip;
-            } catch (err) {
-                console.warn('No se pudo obtener la IP', err);
-                data.clientIp = 'Desconocida';
-            }
-            
-            // Leemos las cookies _fbp y _fbc que instala el pixel de Meta en el navegador
-            data.fbp = getCookie('_fbp') || '';
-            data.fbc = getCookie('_fbc') || '';
-            
-            // Disparo del evento Lead directo al Pixel en el navegador
-            const leadValue = parseFloat(data.presupuesto) || 0;
-            if (typeof fbq === 'function') {
-                fbq('track', 'Lead', {
-                    value: leadValue,
-                    currency: 'MXN'
-                }, { eventID: data.eventId });
-            }
-            
-            // Envío del paquete completo JSON a Make
-            try {
-                await fetch('https://hook.us2.make.com/4m8jk1r25to8gw2eub8khfq1ysmff5co', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify(data)
-                });
-            } catch (error) {
-                console.error('Error al enviar los datos a Make:', error);
-            }
-            
-            showPopup();
-            form.reset();
-            
-            // Regeneramos Event ID para evitar duplicados si la misma persona envía otro lead sin refrescar
-            const newGeneratedEventId = crypto.randomUUID ? crypto.randomUUID() : 'evt_' + Math.random().toString(36).substring(2, 15) + Date.now().toString(36);
-            if (eventIdField) {
-                eventIdField.value = newGeneratedEventId;
-            }
-        });
+        // --- ICONOS SVG (Reemplazando lucide-react para versión Standalone) ---
+        const IconWrapper = ({ size = 24, className = "", children }) => (
+            <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+                {children}
+            </svg>
+        );
+        const DollarSign = (p) => <IconWrapper {...p}><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></IconWrapper>;
+        const Users = (p) => <IconWrapper {...p}><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></IconWrapper>;
+        const Target = (p) => <IconWrapper {...p}><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></IconWrapper>;
+        const MousePointerClick = (p) => <IconWrapper {...p}><path d="m9 9 5 12 1.8-5.2L21 14Z"/><path d="M7.2 2.2 8 5.1"/><path d="m5.1 8-2.9-.8"/><path d="M14 4.1 12 6"/><path d="m6 12-1.9 2"/></IconWrapper>;
+        const Activity = (p) => <IconWrapper {...p}><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></IconWrapper>;
+        const Calendar = (p) => <IconWrapper {...p}><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></IconWrapper>;
+        const Download = (p) => <IconWrapper {...p}><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></IconWrapper>;
+        const UploadCloud = (p) => <IconWrapper {...p}><path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"/><path d="M12 12v9"/><path d="m16 16-4-4-4 4"/></IconWrapper>;
+        const AlertCircle = (p) => <IconWrapper {...p}><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></IconWrapper>;
+        const BarChart2 = (p) => <IconWrapper {...p}><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></IconWrapper>;
+        const Eye = (p) => <IconWrapper {...p}><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></IconWrapper>;
+        const Zap = (p) => <IconWrapper {...p}><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></IconWrapper>;
 
-        closeBtn.addEventListener('click', hidePopup);
-        whatsappLink.addEventListener('click', hidePopup); 
-        popup.addEventListener('click', (e) => {
-            if (e.target === popup) hidePopup(); 
-        });
+        // --- FUNCIONES DE FORMATO GLOBALES ---
+        const formatCurrency = (value) => new Intl.NumberFormat('es-US', { style: 'currency', currency: 'USD' }).format(value || 0);
+        const formatNumber = (value) => new Intl.NumberFormat('es-US').format(value || 0);
 
-        // 3. Intersection Observer (Fade-In)
-        const observerOptions = {
-            root: null,
-            rootMargin: '0px',
-            threshold: 0.1
+        // --- DATOS INICIALES ---
+        const initialData = [
+          { id: 1, segmentName: 'AD+', date: '2026-03-29', spend: 49.18, reach: 1360, impressions: 2273, clicks: 31, results: 3, cpl: 16.39 },
+          { id: 2, segmentName: 'Retargeting_Web', date: '2026-03-29', spend: 25.00, reach: 850, impressions: 1200, clicks: 45, results: 5, cpl: 5.00 },
+          { id: 3, segmentName: 'Lookalike_1%', date: '2026-03-29', spend: 30.00, reach: 1100, impressions: 1500, clicks: 20, results: 1, cpl: 30.00 },
+          { id: 4, segmentName: 'AD+', date: '2026-03-30', spend: 52.00, reach: 1420, impressions: 2400, clicks: 35, results: 4, cpl: 13.00 },
+          { id: 5, segmentName: 'Retargeting_Web', date: '2026-03-30', spend: 28.50, reach: 910, impressions: 1350, clicks: 52, results: 7, cpl: 4.07 },
+          { id: 6, segmentName: 'Lookalike_1%', date: '2026-03-30', spend: 35.00, reach: 1250, impressions: 1750, clicks: 25, results: 2, cpl: 17.50 },
+        ];
+
+        const COLORS = {
+          primary: '#114363',
+          accent: '#bb9b54',
+          success: '#10b981',
+          danger: '#ef4444'
         };
 
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('is-visible');
-                    observer.unobserve(entry.target); 
-                }
-            });
-        }, observerOptions);
+        function App() {
+          const [data, setData] = useState(initialData);
+          const [dateRange, setDateRange] = useState({ start: '2026-03-29', end: '2026-03-30' });
+          const [reportType, setReportType] = useState('Conjunto de Anuncios'); 
+          const [error, setError] = useState('');
+          const [showToast, setShowToast] = useState(false);
+          const fileInputRef = useRef(null);
 
-        document.querySelectorAll('.fade-in-section').forEach(section => {
-            observer.observe(section);
-        });
+          // --- PROCESAMIENTO DE CSV ---
+          const handleFileUpload = (event) => {
+            const file = event.target.files[0];
+            if (!file) return;
 
+            const reader = new FileReader();
+            reader.onload = (e) => {
+              const text = e.target.result;
+              parseCSV(text);
+            };
+            reader.onerror = () => setError('Error al leer el archivo.');
+            reader.readAsText(file);
+          };
+
+          const parseCSV = (csvText) => {
+            try {
+              const lines = csvText.split(/\r?\n/).filter(line => line.trim());
+              if (lines.length < 2) throw new Error("El archivo está vacío o no tiene el formato correcto.");
+              
+              const headers = lines[0].split(/,(?=(?:(?:[^"]*"){2})*[^"]*$)/).map(h => h.replace(/"/g, '').trim().toLowerCase());
+              
+              let detectedType = 'Segmento';
+              let idxName = headers.findIndex(h => h.includes("nombre de la campaña") || h.includes("campaign name"));
+              if (idxName !== -1) {
+                detectedType = 'Campaña';
+              } else {
+                idxName = headers.findIndex(h => h.includes("conjunto de anuncios") || h.includes("ad set name"));
+                if (idxName !== -1) detectedType = 'Conjunto de Anuncios';
+              }
+
+              const idxSpend = headers.findIndex(h => h.includes("importe gastado") || h.includes("amount spent"));
+              const idxResults = headers.findIndex(h => h === "resultados" || h === "results");
+              const idxCPL = headers.findIndex(h => h.includes("coste por resultados") || h.includes("cost per result"));
+              const idxReach = headers.findIndex(h => h === "alcance" || h === "reach");
+              const idxImpressions = headers.findIndex(h => h.includes("impresiones") || h.includes("impressions"));
+              const idxClicks = headers.findIndex(h => h.includes("clics (todos)") || h.includes("clics en el enlace") || h.includes("link clicks"));
+              
+              const idxDateStart = headers.findIndex(h => h.includes("inicio del informe") || h === "inicio");
+              const idxDateEnd = headers.findIndex(h => h.includes("fin del informe") || h === "fin");
+
+              if (idxSpend === -1) throw new Error("No se encontró la columna de Importe Gastado.");
+
+              const parsedData = [];
+              let idCounter = 1;
+              let minDate = '9999-12-31';
+              let maxDate = '0000-00-00';
+
+              for (let i = 1; i < lines.length; i++) {
+                const row = lines[i].split(/,(?=(?:(?:[^"]*"){2})*[^"]*$)/).map(v => v.replace(/"/g, '').trim());
+                if (row.length < 5) continue; 
+
+                const segmentName = idxName !== -1 ? row[idxName] : 'General';
+                if (!segmentName || segmentName === '' || row[idxSpend] === '') continue; 
+
+                const spend = parseFloat(row[idxSpend]) || 0;
+                const results = idxResults !== -1 ? parseFloat(row[idxResults]) || 0 : 0;
+                let cpl = idxCPL !== -1 ? parseFloat(row[idxCPL]) || 0 : 0;
+                
+                if (cpl === 0 && results > 0) cpl = spend / results;
+
+                const rowStartDate = idxDateStart !== -1 ? row[idxDateStart] : 'N/A';
+                const rowEndDate = idxDateEnd !== -1 ? row[idxDateEnd] : 'N/A';
+                
+                if (rowStartDate !== 'N/A' && rowStartDate < minDate) minDate = rowStartDate;
+                if (rowEndDate !== 'N/A' && rowEndDate > maxDate) maxDate = rowEndDate;
+                if (rowStartDate !== 'N/A' && rowEndDate === 'N/A' && rowStartDate > maxDate) maxDate = rowStartDate;
+
+                // Extraemos Alcance e Impresiones
+                const reach = idxReach !== -1 ? parseInt(row[idxReach]) || 0 : 0;
+                const impressions = idxImpressions !== -1 ? parseInt(row[idxImpressions]) || 0 : 0;
+
+                parsedData.push({
+                  id: idCounter++,
+                  segmentName: segmentName,
+                  date: rowStartDate,
+                  spend: spend,
+                  results: results,
+                  cpl: cpl,
+                  reach: reach,
+                  impressions: impressions,
+                  clicks: idxClicks !== -1 ? parseInt(row[idxClicks]) || 0 : 0,
+                });
+              }
+
+              if (parsedData.length === 0) throw new Error("No se encontraron datos válidos de campañas.");
+              
+              setData(parsedData);
+              setReportType(detectedType);
+              setDateRange({ 
+                start: minDate !== '9999-12-31' ? minDate : 'N/A', 
+                end: maxDate !== '0000-00-00' ? maxDate : 'N/A' 
+              });
+              setError('');
+            } catch (err) {
+              setError(err.message);
+            }
+          };
+
+          // --- AGRUPACIONES Y CALCULOS ---
+          const kpis = useMemo(() => {
+            if (!data.length) return { spend: 0, results: 0, cpl: 0, clicks: 0, reach: 0, impressions: 0 };
+            const totalSpend = data.reduce((sum, item) => sum + item.spend, 0);
+            const totalResults = data.reduce((sum, item) => sum + item.results, 0);
+            const totalClicks = data.reduce((sum, item) => sum + item.clicks, 0);
+            const totalReach = data.reduce((sum, item) => sum + item.reach, 0);
+            const totalImpressions = data.reduce((sum, item) => sum + item.impressions, 0);
+            return {
+              spend: totalSpend,
+              results: totalResults,
+              cpl: totalResults > 0 ? totalSpend / totalResults : 0,
+              clicks: totalClicks,
+              reach: totalReach,
+              impressions: totalImpressions,
+              ctr: totalImpressions > 0 ? ((totalClicks / totalImpressions) * 100).toFixed(2) : 0
+            };
+          }, [data]);
+
+          const performanceData = useMemo(() => {
+            const grouped = data.reduce((acc, curr) => {
+              if (!acc[curr.segmentName]) {
+                acc[curr.segmentName] = { segmentName: curr.segmentName, spend: 0, results: 0, reach: 0, impressions: 0, clicks: 0 };
+              }
+              acc[curr.segmentName].spend += curr.spend;
+              acc[curr.segmentName].results += curr.results;
+              acc[curr.segmentName].reach += curr.reach;
+              acc[curr.segmentName].impressions += curr.impressions;
+              acc[curr.segmentName].clicks += curr.clicks;
+              return acc;
+            }, {});
+            
+            return Object.values(grouped).map(item => ({
+              ...item,
+              cpl: item.results > 0 ? Number((item.spend / item.results).toFixed(2)) : 0,
+              ctr: item.impressions > 0 ? Number(((item.clicks / item.impressions) * 100).toFixed(2)) : 0
+            })).sort((a, b) => a.cpl - b.cpl); 
+          }, [data]);
+
+          const trendData = useMemo(() => {
+            const grouped = data.reduce((acc, curr) => {
+              const key = curr.date !== 'N/A' && curr.date !== dateRange.start ? curr.date : curr.segmentName;
+              if (!acc[key]) acc[key] = { name: key, spend: 0, results: 0 };
+              acc[key].spend += curr.spend;
+              acc[key].results += curr.results;
+              return acc;
+            }, {});
+            return Object.values(grouped).sort((a, b) => a.name.localeCompare(b.name));
+          }, [data, dateRange]);
+
+          const strategicInsights = useMemo(() => {
+            if (!performanceData.length) return "Carga tu reporte semanal para generar insights.";
+            
+            const activeSegments = performanceData.filter(a => a.results > 0);
+            const topSegment = activeSegments.length > 0 ? activeSegments[0] : performanceData[0];
+            
+            return (
+              <span>
+                Resumen Semanal: La inversión de <strong className="text-[#bb9b54]">{formatCurrency(kpis.spend)}</strong> generó <strong>{kpis.results} resultados</strong> a un costo promedio de <strong>{formatCurrency(kpis.cpl)}</strong>. 
+                El pilar de eficiencia esta semana fue <em className="font-semibold">{topSegment?.segmentName || "N/A"}</em> ({formatCurrency(topSegment?.cpl || 0)} CPL). 
+                Mantener este nivel de CPL será la prioridad para la próxima semana, monitoreando la saturación de la audiencia.
+              </span>
+            );
+          }, [performanceData, kpis]);
+
+          const handlePrint = () => {
+            try {
+              window.print();
+            } catch (e) {
+              console.log("Impresión bloqueada por el entorno.");
+            }
+            setShowToast(true);
+            setTimeout(() => setShowToast(false), 7000);
+          };
+
+          // --- COMPONENTES UI INTERNOS ---
+          const KPICard = ({ title, value, subtitle, icon: Icon }) => (
+            <div className="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 flex items-center justify-between hover:shadow-md transition-all group print:shadow-none print:border-slate-200">
+              <div>
+                <p className="text-sm font-medium text-slate-500 mb-1">{title}</p>
+                <h3 className="text-3xl font-bold" style={{ color: COLORS.primary }}>{value}</h3>
+                {subtitle && <p className="text-xs text-slate-400 mt-2">{subtitle}</p>}
+              </div>
+              <div className="p-4 rounded-xl group-hover:scale-110 transition-transform print:scale-100" style={{ backgroundColor: `${COLORS.primary}10`, color: COLORS.primary }}>
+                <Icon size={28} />
+              </div>
+            </div>
+          );
+
+          return (
+            <div className="min-h-screen pb-16 print:pb-0">
+              
+              {/* HEADER */}
+              <header className="bg-white border-b border-slate-200 px-6 py-5 sticky top-0 z-50 shadow-sm print:hidden">
+                <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+                  <div className="flex items-center gap-4">
+                    <div className="bg-[#114363] p-3 rounded-xl shadow-inner">
+                      <Activity className="text-[#bb9b54]" size={28} />
+                    </div>
+                    <div>
+                      <h1 className="text-2xl font-extrabold tracking-tight" style={{ color: COLORS.primary }}>
+                        Reporte de Crecimiento
+                      </h1>
+                      <div className="flex items-center gap-2 mt-1">
+                        <span className="text-xs font-bold text-white bg-[#bb9b54] px-2 py-0.5 rounded uppercase tracking-wider">
+                          {reportType}
+                        </span>
+                        <span className="text-sm font-medium text-slate-500 flex items-center gap-1">
+                          <Calendar size={14} /> 
+                          {dateRange.start !== 'N/A' ? `${dateRange.start} al ${dateRange.end}` : 'Semana Actual'}
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-4 print:hidden">
+                    <button 
+                      onClick={handlePrint}
+                      className="flex items-center gap-2 bg-white border border-slate-200 hover:bg-slate-50 text-slate-700 px-5 py-2.5 rounded-xl text-sm font-semibold transition-all shadow-sm hover:shadow active:scale-95"
+                    >
+                      <Download size={18} />
+                      Descargar PDF
+                    </button>
+                    <input 
+                      type="file" 
+                      accept=".csv" 
+                      className="hidden" 
+                      ref={fileInputRef} 
+                      onChange={handleFileUpload} 
+                    />
+                    <button 
+                      onClick={() => fileInputRef.current.click()}
+                      className="flex items-center gap-2 bg-[#114363] hover:bg-[#0d334b] text-white px-5 py-2.5 rounded-xl text-sm font-semibold transition-all shadow-md hover:shadow-lg active:scale-95"
+                    >
+                      <UploadCloud size={18} />
+                      Cargar Reporte (CSV)
+                    </button>
+                  </div>
+                </div>
+              </header>
+
+              <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 space-y-8 print:m-0 print:p-0 print:max-w-none print:w-full">
+                
+                {error && (
+                  <div className="bg-red-50 border border-red-200 text-red-700 p-4 rounded-xl flex items-center gap-3 animate-pulse">
+                    <AlertCircle size={20} />
+                    <p className="font-medium">{error}</p>
+                  </div>
+                )}
+
+                {/* NARRATIVA */}
+                <section className="bg-gradient-to-br from-[#114363] to-[#1c6491] print:bg-white print:border print:border-slate-200 rounded-2xl p-8 text-white print:text-slate-800 shadow-lg print:shadow-none relative overflow-hidden">
+                  <div className="absolute top-0 right-0 opacity-10 print:opacity-5 pointer-events-none transform translate-x-10 -translate-y-10">
+                    <Target size={250} />
+                  </div>
+                  <div className="relative z-10">
+                    <h2 className="text-xl font-bold flex items-center gap-2 mb-3 text-[#bb9b54]">
+                      <Target size={24} />
+                      Visión Ejecutiva de la Semana
+                    </h2>
+                    <p className="text-slate-100 print:text-slate-700 text-lg max-w-4xl leading-relaxed">
+                      {strategicInsights}
+                    </p>
+                  </div>
+                </section>
+
+                {/* KPIS */}
+                <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-4">
+                  <div className="xl:col-span-2">
+                    <KPICard title="Presupuesto Ejecutado" value={formatCurrency(kpis.spend)} icon={DollarSign} />
+                  </div>
+                  <KPICard title="Conversiones" value={formatNumber(kpis.results)} icon={Users} />
+                  <KPICard title="CPL" value={formatCurrency(kpis.cpl)} icon={Target} />
+                  <KPICard title="Alcance" value={formatNumber(kpis.reach)} icon={Zap} />
+                  <KPICard title="Impresiones" value={formatNumber(kpis.impressions)} icon={Eye} />
+                </section>
+
+                {/* VISUALIZACIONES */}
+                <section className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                  
+                  {/* CHART: Volumen vs Inversión */}
+                  <div className="bg-white p-6 rounded-2xl shadow-sm print:shadow-none border border-slate-100 flex flex-col">
+                    <div className="mb-6 flex justify-between items-center">
+                      <div>
+                        <h3 className="text-lg font-bold" style={{ color: COLORS.primary }}>Volumen vs Inversión</h3>
+                        <p className="text-sm text-slate-500">Comportamiento temporal</p>
+                      </div>
+                      <BarChart2 className="text-slate-300" size={24} />
+                    </div>
+                    <div className="h-80 flex-grow">
+                      <ResponsiveContainer width="100%" height="100%">
+                        {trendData.length > 1 ? (
+                          <AreaChart data={trendData} margin={{ top: 10, right: 10, left: -20, bottom: 0 }}>
+                            <defs>
+                              <linearGradient id="colorSpend2" x1="0" y1="0" x2="0" y2="1">
+                                <stop offset="5%" stopColor={COLORS.primary} stopOpacity={0.2}/>
+                                <stop offset="95%" stopColor={COLORS.primary} stopOpacity={0}/>
+                              </linearGradient>
+                            </defs>
+                            <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#e2e8f0" />
+                            <XAxis dataKey="name" axisLine={false} tickLine={false} tick={{ fontSize: 12, fill: '#64748b' }} dy={10} />
+                            <YAxis yAxisId="left" axisLine={false} tickLine={false} tick={{ fontSize: 12, fill: '#64748b' }} tickFormatter={(val) => `$${val}`} />
+                            <YAxis yAxisId="right" orientation="right" axisLine={false} tickLine={false} tick={{ fontSize: 12, fill: '#64748b' }} />
+                            <RechartsTooltip 
+                              contentStyle={{ borderRadius: '12px', border: 'none', boxShadow: '0 10px 15px -3px rgb(0 0 0 / 0.1)' }}
+                              labelStyle={{ fontWeight: 'bold', color: COLORS.primary, marginBottom: '4px' }}
+                            />
+                            <Legend iconType="circle" wrapperStyle={{ paddingTop: '20px' }}/>
+                            <Area yAxisId="left" type="monotone" dataKey="spend" name="Inversión ($)" stroke={COLORS.primary} strokeWidth={3} fillOpacity={1} fill="url(#colorSpend2)" />
+                            <Area yAxisId="right" type="monotone" dataKey="results" name="Resultados" stroke={COLORS.accent} strokeWidth={3} fillOpacity={0} />
+                          </AreaChart>
+                        ) : (
+                          <BarChart data={trendData} margin={{ top: 10, right: 10, left: -20, bottom: 0 }}>
+                            <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#e2e8f0" />
+                            <XAxis dataKey="name" axisLine={false} tickLine={false} tick={{ fontSize: 12, fill: '#64748b' }} dy={10} />
+                            <YAxis yAxisId="left" axisLine={false} tickLine={false} tick={{ fontSize: 12, fill: '#64748b' }} tickFormatter={(val) => `$${val}`} />
+                            <YAxis yAxisId="right" orientation="right" axisLine={false} tickLine={false} tick={{ fontSize: 12, fill: '#64748b' }} />
+                            <RechartsTooltip contentStyle={{ borderRadius: '12px', border: 'none' }} />
+                            <Legend iconType="circle" wrapperStyle={{ paddingTop: '20px' }}/>
+                            <Bar yAxisId="left" dataKey="spend" name="Inversión ($)" fill={COLORS.primary} radius={[4, 4, 0, 0]} />
+                            <Bar yAxisId="right" dataKey="results" name="Resultados" fill={COLORS.accent} radius={[4, 4, 0, 0]} />
+                          </BarChart>
+                        )}
+                      </ResponsiveContainer>
+                    </div>
+                  </div>
+
+                  {/* RANKING: Eficiencia */}
+                  <div className="bg-white p-6 rounded-2xl shadow-sm print:shadow-none border border-slate-100 flex flex-col">
+                    <div className="mb-6">
+                      <h3 className="text-lg font-bold" style={{ color: COLORS.primary }}>Desempeño por {reportType}</h3>
+                      <p className="text-sm text-slate-500">Ordenado por rentabilidad (CPL)</p>
+                    </div>
+                    
+                    <div className="flex-grow overflow-auto pr-2">
+                      <div className="space-y-4">
+                        {performanceData.map((item, index) => {
+                          const isTop = index === 0 && item.results > 0;
+                          const cplHealth = item.cpl > kpis.cpl * 1.2 ? 'text-red-500' : (item.cpl <= kpis.cpl ? 'text-emerald-500' : 'text-amber-500');
+                          
+                          return (
+                            <div key={index} className={`p-4 rounded-xl border ${isTop ? 'border-[#bb9b54] bg-[#bb9b54]/5' : 'border-slate-100 bg-slate-50'} flex justify-between items-center`}>
+                              <div className="w-1/2 pr-4">
+                                <div className="flex items-center gap-2">
+                                  <h4 className="font-semibold text-slate-800 truncate" title={item.segmentName}>
+                                    {item.segmentName}
+                                  </h4>
+                                  {isTop && <span className="bg-[#bb9b54] text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase">Top</span>}
+                                </div>
+                                <p className="text-xs text-slate-500 mt-1">
+                                  Inversión: {formatCurrency(item.spend)} &bull; Alcance: {formatNumber(item.reach)} &bull; Impresiones: {formatNumber(item.impressions)}
+                                </p>
+                              </div>
+                              
+                              <div className="w-1/4 text-center">
+                                <p className="text-xs text-slate-500 mb-1">Resultados</p>
+                                <p className="font-bold text-slate-800 text-lg">{formatNumber(item.results)}</p>
+                              </div>
+                              
+                              <div className="w-1/4 text-right">
+                                <p className="text-xs text-slate-500 mb-1">CPL</p>
+                                <p className={`font-bold text-lg ${cplHealth}`}>
+                                  {item.results > 0 ? formatCurrency(item.cpl) : 'N/A'}
+                                </p>
+                              </div>
+                            </div>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                
+                {/* TOAST DE IMPRESION */}
+                {showToast && (
+                  <div className="fixed bottom-8 left-1/2 transform -translate-x-1/2 bg-slate-800 text-white px-6 py-4 rounded-2xl shadow-2xl flex items-center gap-4 z-50 print:hidden transition-all duration-300">
+                    <div className="bg-[#bb9b54] p-2 rounded-full flex-shrink-0">
+                      <Download size={16} className="text-white" />
+                    </div>
+                    <div className="flex flex-col">
+                      <span className="font-bold text-sm">Preparando tu reporte...</span>
+                      <span className="text-xs text-slate-300">
+                        Si el PDF no se genera automáticamente, presiona <kbd className="bg-slate-700 px-1.5 py-0.5 rounded mx-1">Ctrl + P</kbd> (o <kbd className="bg-slate-700 px-1.5 py-0.5 rounded mx-1">Cmd + P</kbd> en Mac)
+                      </span>
+                    </div>
+                    <button onClick={() => setShowToast(false)} className="ml-4 text-slate-400 hover:text-white transition-colors text-lg">
+                      &times;
+                    </button>
+                  </div>
+                )}
+
+              </main>
+            </div>
+          );
+        }
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<App />);
     </script>
 </body>
 </html>
