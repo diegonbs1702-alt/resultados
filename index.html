@@ -22,6 +22,21 @@
             }
         }
     </script>
+    
+    <style>
+        /* FORZAR COLORES DE FONDO EN IMPRESIÓN/PDF */
+        @media print {
+            body {
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+                background-color: #0f172a !important; /* slate-900 */
+            }
+            @page {
+                size: landscape; /* Orientación horizontal recomendada para dashboards */
+                margin: 0.5cm;
+            }
+        }
+    </style>
 
     <!-- React & ReactDOM -->
     <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
@@ -35,7 +50,7 @@
     <script src="https://unpkg.com/prop-types/prop-types.min.js"></script>
     <script src="https://unpkg.com/recharts@2.1.12/umd/Recharts.js"></script>
 </head>
-<body class="bg-slate-900 print:bg-white text-slate-200 antialiased selection:bg-primaryLight selection:text-white">
+<body class="bg-slate-900 print:bg-slate-900 text-slate-200 print:text-slate-200 antialiased selection:bg-primaryLight selection:text-white">
     
     <div id="root"></div>
 
@@ -269,13 +284,13 @@
 
           // --- COMPONENTES UI INTERNOS ---
           const KPICard = ({ title, value, subtitle, icon: Icon, isPrimary }) => (
-            <div className={`bg-slate-800 rounded-2xl p-6 shadow-lg border ${isPrimary ? 'border-primary/50 shadow-primary/20' : 'border-slate-700 hover:border-slate-600'} flex items-center justify-between transition-all duration-300 group`}>
+            <div className={`bg-slate-800 print:bg-slate-800 rounded-2xl p-6 shadow-lg border print:border-slate-700 ${isPrimary ? 'border-primary/50 shadow-primary/20' : 'border-slate-700 hover:border-slate-600'} flex items-center justify-between transition-all duration-300 group`}>
               <div>
-                <p className="text-sm font-medium text-slate-400 mb-1">{title}</p>
-                <h3 className={`text-3xl font-extrabold ${isPrimary ? 'text-primaryLight' : 'text-white'}`}>{value}</h3>
+                <p className="text-sm font-medium text-slate-400 print:text-slate-400 mb-1">{title}</p>
+                <h3 className={`text-3xl font-extrabold print:text-white ${isPrimary ? 'text-primaryLight print:text-primaryLight' : 'text-white'}`}>{value}</h3>
                 {subtitle && <p className="text-xs text-slate-500 mt-2">{subtitle}</p>}
               </div>
-              <div className={`p-4 rounded-xl transition-transform duration-300 ${isPrimary ? 'bg-primary/20 text-primaryLight' : 'bg-slate-700/50 text-slate-400 group-hover:text-primaryLight group-hover:bg-primary/10 group-hover:scale-110'}`}>
+              <div className={`p-4 rounded-xl transition-transform duration-300 print:bg-slate-700/50 print:text-slate-400 ${isPrimary ? 'bg-primary/20 text-primaryLight print:bg-primary/20 print:text-primaryLight' : 'bg-slate-700/50 text-slate-400 group-hover:text-primaryLight group-hover:bg-primary/10 group-hover:scale-110'}`}>
                 <Icon size={28} />
               </div>
             </div>
@@ -335,14 +350,14 @@
               <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 space-y-8 print:m-0 print:p-0 print:max-w-none print:w-full">
                 
                 {error && (
-                  <div className="bg-danger/10 border border-danger/20 text-danger p-4 rounded-xl flex items-center gap-3">
+                  <div className="bg-danger/10 border border-danger/20 text-danger p-4 rounded-xl flex items-center gap-3 print:hidden">
                     <AlertCircle size={20} />
                     <p className="font-semibold">{error}</p>
                   </div>
                 )}
 
                 {/* NARRATIVA */}
-                <section className="bg-gradient-to-br from-primary to-[#033d31] rounded-2xl p-8 text-white shadow-lg relative overflow-hidden group border border-slate-700/50">
+                <section className="bg-gradient-to-br from-primary to-[#033d31] print:bg-primary rounded-2xl p-8 text-white shadow-lg relative overflow-hidden group border border-slate-700/50 print:border-none print:break-inside-avoid">
                   <div className="absolute top-0 right-0 opacity-10 pointer-events-none transform translate-x-10 -translate-y-10 transition-transform duration-700 group-hover:scale-110">
                     <Target size={250} />
                   </div>
@@ -358,8 +373,8 @@
                 </section>
 
                 {/* KPIS */}
-                <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-4">
-                  <div className="xl:col-span-2">
+                <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-4 print:grid-cols-3 print:gap-2">
+                  <div className="xl:col-span-2 print:col-span-1">
                     <KPICard title="Presupuesto Ejecutado" value={formatCurrency(kpis.spend)} icon={DollarSign} isPrimary={true} />
                   </div>
                   <KPICard title="Conversiones" value={formatNumber(kpis.results)} icon={Users} />
@@ -369,18 +384,18 @@
                 </section>
 
                 {/* VISUALIZACIONES */}
-                <section className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <section className="grid grid-cols-1 lg:grid-cols-2 gap-6 print:grid-cols-2 print:gap-4 print:mt-4">
                   
                   {/* CHART: Volumen vs Inversión */}
-                  <div className="bg-slate-800 p-6 rounded-2xl shadow-lg border border-slate-700 flex flex-col">
+                  <div className="bg-slate-800 print:bg-slate-800 p-6 rounded-2xl shadow-lg border border-slate-700 print:border-slate-700 flex flex-col print:break-inside-avoid">
                     <div className="mb-6 flex justify-between items-center">
                       <div>
-                        <h3 className="text-lg font-bold text-white flex items-center gap-2">
+                        <h3 className="text-lg font-bold text-white print:text-white flex items-center gap-2">
                           Volumen vs Inversión
                         </h3>
-                        <p className="text-sm text-slate-400">Comportamiento temporal</p>
+                        <p className="text-sm text-slate-400 print:text-slate-400">Comportamiento temporal</p>
                       </div>
-                      <BarChart2 className="text-slate-500" size={24} />
+                      <BarChart2 className="text-slate-500 print:text-slate-500" size={24} />
                     </div>
                     <div className="h-80 flex-grow">
                       <ResponsiveContainer width="100%" height="100%">
@@ -422,10 +437,10 @@
                   </div>
 
                   {/* RANKING: Eficiencia */}
-                  <div className="bg-slate-800 p-6 rounded-2xl shadow-lg border border-slate-700 flex flex-col">
+                  <div className="bg-slate-800 print:bg-slate-800 p-6 rounded-2xl shadow-lg border border-slate-700 print:border-slate-700 flex flex-col print:break-inside-avoid">
                     <div className="mb-6">
-                      <h3 className="text-lg font-bold text-white">Desempeño por {reportType}</h3>
-                      <p className="text-sm text-slate-400">Ordenado por rentabilidad (CPL)</p>
+                      <h3 className="text-lg font-bold text-white print:text-white">Desempeño por {reportType}</h3>
+                      <p className="text-sm text-slate-400 print:text-slate-400">Ordenado por rentabilidad (CPL)</p>
                     </div>
                     
                     <div className="flex-grow overflow-auto pr-2 custom-scrollbar">
@@ -443,28 +458,28 @@
                           const cplHealth = item.cpl > kpis.cpl * 1.2 ? 'text-danger' : (item.cpl <= kpis.cpl ? 'text-success' : 'text-amber-400');
                           
                           return (
-                            <div key={index} className={`p-4 rounded-xl border ${isTop ? 'border-primary/50 bg-primary/10' : 'border-slate-700 bg-slate-700/30'} flex justify-between items-center transition-all hover:border-slate-600`}>
+                            <div key={index} className={`p-4 rounded-xl border ${isTop ? 'border-primary/50 bg-primary/10 print:border-primary/50 print:bg-primary/10' : 'border-slate-700 bg-slate-700/30 print:border-slate-700 print:bg-slate-700/30'} flex justify-between items-center transition-all hover:border-slate-600`}>
                               <div className="w-1/2 pr-4">
                                 <div className="flex items-center gap-2">
-                                  <h4 className="font-semibold text-slate-200 truncate" title={item.segmentName}>
+                                  <h4 className="font-semibold text-slate-200 print:text-slate-200 truncate" title={item.segmentName}>
                                     {item.segmentName}
                                   </h4>
                                   {isTop && <span className="bg-accent text-slate-900 text-[10px] font-black px-2 py-0.5 rounded uppercase tracking-widest shadow-sm">Top</span>}
                                 </div>
-                                <p className="text-xs text-slate-400 mt-1">
-                                  Inv: <span className="font-medium text-slate-300">{formatCurrency(item.spend)}</span> &bull; 
-                                  Alcance: <span className="font-medium text-slate-300">{formatNumber(item.reach)}</span>
+                                <p className="text-xs text-slate-400 print:text-slate-400 mt-1">
+                                  Inv: <span className="font-medium text-slate-300 print:text-slate-300">{formatCurrency(item.spend)}</span> &bull; 
+                                  Alcance: <span className="font-medium text-slate-300 print:text-slate-300">{formatNumber(item.reach)}</span>
                                 </p>
                               </div>
                               
                               <div className="w-1/4 text-center">
-                                <p className="text-xs text-slate-400 mb-1">Resultados</p>
-                                <p className="font-black text-white text-lg">{formatNumber(item.results)}</p>
+                                <p className="text-xs text-slate-400 print:text-slate-400 mb-1">Resultados</p>
+                                <p className="font-black text-white print:text-white text-lg">{formatNumber(item.results)}</p>
                               </div>
                               
                               <div className="w-1/4 text-right">
-                                <p className="text-xs text-slate-400 mb-1">CPL</p>
-                                <p className={`font-black text-lg ${cplHealth}`}>
+                                <p className="text-xs text-slate-400 print:text-slate-400 mb-1">CPL</p>
+                                <p className={`font-black text-lg ${cplHealth} print:${cplHealth.replace('text-', 'text-')}`}>
                                   {item.results > 0 ? formatCurrency(item.cpl) : 'N/A'}
                                 </p>
                               </div>
@@ -485,7 +500,7 @@
                     <div className="flex flex-col">
                       <span className="font-bold text-sm text-white">Preparando tu reporte...</span>
                       <span className="text-xs text-slate-400">
-                        Si el PDF no se genera, presiona <kbd className="bg-slate-900 border border-slate-600 px-1.5 py-0.5 rounded mx-1 text-slate-300">Ctrl + P</kbd>
+                        Asegúrate de marcar "Gráficos de fondo" en la ventana de impresión para mantener los colores.
                       </span>
                     </div>
                     <button onClick={() => setShowToast(false)} className="ml-4 text-slate-500 hover:text-white transition-colors text-lg">
